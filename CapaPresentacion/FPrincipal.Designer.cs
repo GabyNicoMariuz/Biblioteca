@@ -43,6 +43,9 @@
             this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDePrestamosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bDevolucionLibro = new System.Windows.Forms.Button();
+            this.bReservarLibro = new System.Windows.Forms.Button();
+            this.bRenovarPrestamo = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +57,7 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(755, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -104,10 +107,11 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
             // 
             // bPrestamoLibro
             // 
-            this.bPrestamoLibro.Location = new System.Drawing.Point(345, 112);
+            this.bPrestamoLibro.Location = new System.Drawing.Point(308, 108);
             this.bPrestamoLibro.Name = "bPrestamoLibro";
             this.bPrestamoLibro.Size = new System.Drawing.Size(133, 33);
             this.bPrestamoLibro.TabIndex = 1;
@@ -159,11 +163,41 @@
             this.listadoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.listadoDeReservasToolStripMenuItem.Text = "Listado de reservas";
             // 
+            // bDevolucionLibro
+            // 
+            this.bDevolucionLibro.Location = new System.Drawing.Point(308, 161);
+            this.bDevolucionLibro.Name = "bDevolucionLibro";
+            this.bDevolucionLibro.Size = new System.Drawing.Size(133, 33);
+            this.bDevolucionLibro.TabIndex = 2;
+            this.bDevolucionLibro.Text = "Devolución de libro";
+            this.bDevolucionLibro.UseVisualStyleBackColor = true;
+            // 
+            // bReservarLibro
+            // 
+            this.bReservarLibro.Location = new System.Drawing.Point(308, 216);
+            this.bReservarLibro.Name = "bReservarLibro";
+            this.bReservarLibro.Size = new System.Drawing.Size(133, 33);
+            this.bReservarLibro.TabIndex = 3;
+            this.bReservarLibro.Text = "Reservar un libro";
+            this.bReservarLibro.UseVisualStyleBackColor = true;
+            // 
+            // bRenovarPrestamo
+            // 
+            this.bRenovarPrestamo.Location = new System.Drawing.Point(308, 264);
+            this.bRenovarPrestamo.Name = "bRenovarPrestamo";
+            this.bRenovarPrestamo.Size = new System.Drawing.Size(133, 33);
+            this.bRenovarPrestamo.TabIndex = 4;
+            this.bRenovarPrestamo.Text = "Renovar Prestamo";
+            this.bRenovarPrestamo.UseVisualStyleBackColor = true;
+            // 
             // FPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(755, 353);
+            this.Controls.Add(this.bRenovarPrestamo);
+            this.Controls.Add(this.bReservarLibro);
+            this.Controls.Add(this.bDevolucionLibro);
             this.Controls.Add(this.bPrestamoLibro);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -193,6 +227,9 @@
         private System.Windows.Forms.ToolStripMenuItem listadoDeClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDePrestamosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDeReservasToolStripMenuItem;
+        private System.Windows.Forms.Button bDevolucionLibro;
+        private System.Windows.Forms.Button bReservarLibro;
+        private System.Windows.Forms.Button bRenovarPrestamo;
     }
 }
 

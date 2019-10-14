@@ -17,6 +17,13 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        
+        private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esta saliendo de la aplicacion");
+            this.Close();
+        }
+
+
+
     }
 }
