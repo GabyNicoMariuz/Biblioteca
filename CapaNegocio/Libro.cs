@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class Libro
-{
+    public class Libro
+    {
         private int id;
         private int isbn;
         private string nombre;
@@ -14,7 +16,7 @@ namespace CapaNegocio
         private List<Ejemplar> listadoEjemplares;
 
         //Constructor
-        public Libro(int id, int isbn, string nombre, string autor, string genero, List<Ejemplar> listadoEjemplares)
+       Libro(int id, int isbn, string nombre, string autor, string genero, List<Ejemplar> listadoEjemplares)
         {
             this.id = id;
             this.isbn = isbn;
@@ -25,7 +27,7 @@ namespace CapaNegocio
         }
 
 
-        
+
 
         public int cantEjemplaresDisponibles()
         {
@@ -40,10 +42,5 @@ namespace CapaNegocio
             else
                 return false;
         }
-
-
-
     }
-
-
 }

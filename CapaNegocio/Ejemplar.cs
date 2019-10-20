@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class Ejemplar
+    public class Ejemplar
     {
         private int numEjemplar;
         private Boolean estado;
@@ -12,15 +14,11 @@ namespace CapaNegocio
 
 
         //constructor
-        public Ejemplar(int numEjemplar, bool estado, Libro libro)
+        Ejemplar(int numEjemplar,bool estado,Libro libro)
         {
             this.numEjemplar = numEjemplar;
             this.estado = estado;
             this.libro = libro;
         }
-
-
-
-        
     }
 }

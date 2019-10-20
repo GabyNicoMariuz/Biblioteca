@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class SocioComun : Socio
+    public class SocioComun:Socio
     {
-        public SocioComun(int id, int nombre, int apellido, int dni, string domicilio, int tel) :
+        SocioComun(int id, int nombre, int apellido, int dni, string domicilio, int tel) :
            base(id, nombre, apellido, dni, domicilio, tel)
         {
 
         }
-
 
     }
 }

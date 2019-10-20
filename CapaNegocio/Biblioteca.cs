@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class Biblioteca
+    public class Biblioteca
     {
-
         private string nombre;
         private List<Libro> listadoLibros;
         private List<Reserva> listadoReservas;
@@ -14,7 +15,7 @@ namespace CapaNegocio
         private List<Socio> listadoSocios;
         private List<Ejemplar> listadoEjemplares;
 
-        public Biblioteca(string nombre, List<Libro> listLibros, List<Reserva> listReserv, List<Prestamo> listPresta, List<Socio> listSocios, List<Ejemplar> listEjemp)
+         Biblioteca(string nombre, List<Libro> listLibros, List<Reserva> listReserv, List<Prestamo> listPresta, List<Socio> listSocios, List<Ejemplar> listEjemp)
         {
             this.nombre = nombre;
             this.listadoLibros = listLibros;
@@ -30,9 +31,5 @@ namespace CapaNegocio
 
         }
 
-
-
     }
-
-
 }

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class Socio
+    public class Socio
     {
         private int id;
         private int nombre;
@@ -22,9 +24,8 @@ namespace CapaNegocio
             this.dni = dni;
             this.domicilio = domicilio;
             this.tel = tel;
+            //contraseña
         }
-        //contraseña
-
 
 
     }
