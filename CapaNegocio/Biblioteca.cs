@@ -15,17 +15,37 @@ namespace CapaNegocio
         private List<Socio> listadoSocios;
         private List<Ejemplar> listadoEjemplares;
 
-         Biblioteca(string nombre, List<Libro> listLibros, List<Reserva> listReserv, List<Prestamo> listPresta, List<Socio> listSocios, List<Ejemplar> listEjemp)
+         public Biblioteca()
         {
-            this.nombre = nombre;
-            this.listadoLibros = listLibros;
-            this.listadoReservas = listReserv;
-            this.listadoPrestamos = listPresta;
-            this.listadoSocios = listSocios;
-            this.listadoEjemplares = listEjemp;
+            this.nombre = "Biblioteca";
+            this.listadoLibros = new List<Libro>();
+            this.listadoReservas = new List<Reserva>();
+            this.listadoPrestamos = new List<Prestamo>();
+            this.listadoSocios = new List<Socio>();
+            this.listadoEjemplares = new List<Ejemplar>();
         }
 
 
+        //Devuelve true si el libro existe, sino false
+        public bool verificarlibro(Libro l)
+        {
+            if (this.listadoLibros.Contains(l) == true)
+                return true;//lo encontro
+            else
+                return false;//no lo encontro
+        }
+
+        public void agrebarlibro(Libro l)
+        {
+            if (l != null)
+                listadoLibros.Add(l);
+            for(int i = 0; i < l.CantEjemplares; i++)
+            {
+                Ejemplar ejem = new Ejemplar((i + 1),true, l);
+                l.ListadoEjemplares.Add(ejem);
+                this.listadoEjemplares.Add(ejem);
+            }
+        }
         public void registrarSocio()
         {
 

@@ -14,11 +14,13 @@ namespace CapaNegocio
 
 
         //constructor
-        Ejemplar(int numEjemplar,bool estado,Libro libro)
+        public Ejemplar(int numEjemplar,bool estado,Libro libro)
         {
             this.numEjemplar = numEjemplar;
             this.estado = estado;
             this.libro = libro;
         }
+
+
     }
 }

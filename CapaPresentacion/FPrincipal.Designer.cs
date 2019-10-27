@@ -33,16 +33,16 @@
             this.libroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeAltaUnLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaunLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bPrestamoLibro = new System.Windows.Forms.Button();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeAltaUnClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaUnClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeLibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDePrestamosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bPrestamoLibro = new System.Windows.Forms.Button();
             this.bDevolucionLibro = new System.Windows.Forms.Button();
             this.bReservarLibro = new System.Windows.Forms.Button();
             this.bRenovarPrestamo = new System.Windows.Forms.Button();
@@ -84,39 +84,13 @@
             this.darDeAltaUnLibroToolStripMenuItem.Name = "darDeAltaUnLibroToolStripMenuItem";
             this.darDeAltaUnLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeAltaUnLibroToolStripMenuItem.Text = "Agregar un libro";
+            this.darDeAltaUnLibroToolStripMenuItem.Click += new System.EventHandler(this.DarDeAltaUnLibroToolStripMenuItem_Click);
             // 
             // darDeBajaunLibroToolStripMenuItem
             // 
             this.darDeBajaunLibroToolStripMenuItem.Name = "darDeBajaunLibroToolStripMenuItem";
             this.darDeBajaunLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeBajaunLibroToolStripMenuItem.Text = "Dar de baja un libro";
-            // 
-            // listadoToolStripMenuItem
-            // 
-            this.listadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listadoDeLibrosToolStripMenuItem,
-            this.listadoDeClientesToolStripMenuItem,
-            this.listadoDePrestamosToolStripMenuItem,
-            this.listadoDeReservasToolStripMenuItem});
-            this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.listadoToolStripMenuItem.Text = "Listado";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
-            // 
-            // bPrestamoLibro
-            // 
-            this.bPrestamoLibro.Location = new System.Drawing.Point(308, 108);
-            this.bPrestamoLibro.Name = "bPrestamoLibro";
-            this.bPrestamoLibro.Size = new System.Drawing.Size(133, 33);
-            this.bPrestamoLibro.TabIndex = 1;
-            this.bPrestamoLibro.Text = "Prestamo de libro";
-            this.bPrestamoLibro.UseVisualStyleBackColor = true;
             // 
             // clienteToolStripMenuItem
             // 
@@ -138,6 +112,17 @@
             this.darDeBajaUnClienteToolStripMenuItem.Name = "darDeBajaUnClienteToolStripMenuItem";
             this.darDeBajaUnClienteToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.darDeBajaUnClienteToolStripMenuItem.Text = "Dar de baja un cliente";
+            // 
+            // listadoToolStripMenuItem
+            // 
+            this.listadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listadoDeLibrosToolStripMenuItem,
+            this.listadoDeClientesToolStripMenuItem,
+            this.listadoDePrestamosToolStripMenuItem,
+            this.listadoDeReservasToolStripMenuItem});
+            this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.listadoToolStripMenuItem.Text = "Listado";
             // 
             // listadoDeLibrosToolStripMenuItem
             // 
@@ -162,6 +147,22 @@
             this.listadoDeReservasToolStripMenuItem.Name = "listadoDeReservasToolStripMenuItem";
             this.listadoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.listadoDeReservasToolStripMenuItem.Text = "Listado de reservas";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
+            // 
+            // bPrestamoLibro
+            // 
+            this.bPrestamoLibro.Location = new System.Drawing.Point(308, 108);
+            this.bPrestamoLibro.Name = "bPrestamoLibro";
+            this.bPrestamoLibro.Size = new System.Drawing.Size(133, 33);
+            this.bPrestamoLibro.TabIndex = 1;
+            this.bPrestamoLibro.Text = "Prestamo de libro";
+            this.bPrestamoLibro.UseVisualStyleBackColor = true;
             // 
             // bDevolucionLibro
             // 

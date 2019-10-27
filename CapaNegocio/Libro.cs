@@ -13,27 +13,36 @@ namespace CapaNegocio
         private string nombre;
         private string autor;
         private string genero;
+        private int cantEjemplares;
         private List<Ejemplar> listadoEjemplares;
 
         //Constructor
-       Libro(int id, int isbn, string nombre, string autor, string genero, List<Ejemplar> listadoEjemplares)
+    
+
+        public Libro(int id, string nom, int isbn, string autor, string genero, int cant)
         {
             this.id = id;
             this.isbn = isbn;
-            this.nombre = nombre;
             this.autor = autor;
             this.genero = genero;
-            this.listadoEjemplares = listadoEjemplares;
+            this.cantEjemplares = cant;
+            listadoEjemplares = new List<Ejemplar>();
         }
-
-
-
 
         public int cantEjemplaresDisponibles()
         {
             return this.listadoEjemplares.Count;
         }
 
+        public List<Ejemplar> ListadoEjemplares
+        {
+            get { return this.listadoEjemplares; }
+            set { this.listadoEjemplares = value; }
+        }
+        public int CantEjemplares
+        {
+            get { return this.cantEjemplares; }
+        }
 
         public bool hayEjemplares()
         {

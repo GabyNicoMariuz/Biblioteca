@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCantEjem = new System.Windows.Forms.TextBox();
+            this.tbGenero = new System.Windows.Forms.TextBox();
+            this.tbAutor = new System.Windows.Forms.TextBox();
+            this.tbISBN = new System.Windows.Forms.TextBox();
+            this.tbNom = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,11 +46,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbCantEjem);
+            this.groupBox1.Controls.Add(this.tbGenero);
+            this.groupBox1.Controls.Add(this.tbAutor);
+            this.groupBox1.Controls.Add(this.tbISBN);
+            this.groupBox1.Controls.Add(this.tbNom);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -64,40 +64,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del libro";
             // 
-            // textBox5
+            // tbCantEjem
             // 
-            this.textBox5.Location = new System.Drawing.Point(220, 248);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(87, 26);
-            this.textBox5.TabIndex = 9;
+            this.tbCantEjem.Location = new System.Drawing.Point(220, 248);
+            this.tbCantEjem.Name = "tbCantEjem";
+            this.tbCantEjem.Size = new System.Drawing.Size(87, 26);
+            this.tbCantEjem.TabIndex = 9;
             // 
-            // textBox4
+            // tbGenero
             // 
-            this.textBox4.Location = new System.Drawing.Point(220, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 26);
-            this.textBox4.TabIndex = 8;
+            this.tbGenero.Location = new System.Drawing.Point(220, 193);
+            this.tbGenero.Name = "tbGenero";
+            this.tbGenero.Size = new System.Drawing.Size(168, 26);
+            this.tbGenero.TabIndex = 8;
             // 
-            // textBox3
+            // tbAutor
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 143);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 26);
-            this.textBox3.TabIndex = 7;
+            this.tbAutor.Location = new System.Drawing.Point(220, 143);
+            this.tbAutor.Name = "tbAutor";
+            this.tbAutor.Size = new System.Drawing.Size(168, 26);
+            this.tbAutor.TabIndex = 7;
             // 
-            // textBox2
+            // tbISBN
             // 
-            this.textBox2.Location = new System.Drawing.Point(220, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 26);
-            this.textBox2.TabIndex = 6;
+            this.tbISBN.Location = new System.Drawing.Point(220, 95);
+            this.tbISBN.Name = "tbISBN";
+            this.tbISBN.Size = new System.Drawing.Size(168, 26);
+            this.tbISBN.TabIndex = 6;
             // 
-            // textBox1
+            // tbNom
             // 
-            this.textBox1.Location = new System.Drawing.Point(220, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 26);
-            this.textBox1.TabIndex = 5;
+            this.tbNom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNom.Location = new System.Drawing.Point(220, 51);
+            this.tbNom.Name = "tbNom";
+            this.tbNom.Size = new System.Drawing.Size(168, 26);
+            this.tbNom.TabIndex = 5;
             // 
             // label5
             // 
@@ -190,11 +191,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCantEjem;
+        private System.Windows.Forms.TextBox tbGenero;
+        private System.Windows.Forms.TextBox tbAutor;
+        private System.Windows.Forms.TextBox tbISBN;
+        private System.Windows.Forms.TextBox tbNom;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bCancelar;
     }
