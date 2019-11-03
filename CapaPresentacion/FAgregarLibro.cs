@@ -16,7 +16,7 @@ namespace CapaPresentacion
     {
 
         Libro l = null;
-        Random r = new random();
+        readonly Random r = new random();
 
         public FAgregarLibro()
         {

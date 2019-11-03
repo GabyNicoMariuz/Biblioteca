@@ -23,11 +23,15 @@ namespace CapaPresentacion
                 biblioteca = new Biblioteca();
         }
 
+        //Se cierra la aplicacion
         private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Esta saliendo de la aplicacion");
             this.Close();
         }
+
+
+
 
         //Agregar nuevo libro
         private void DarDeAltaUnLibroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,8 +49,15 @@ namespace CapaPresentacion
                 else
                     MessageBox.Show("Ya existe ese libro");
             }
-            
-
         }
+
+        private void ListadoDeLibrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Flistadolibros listlibros = new Flistadolibros(biblioteca);
+            listlibros.ShowDialog();
+        }
+
+
+
     }
 }

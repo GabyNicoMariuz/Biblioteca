@@ -22,6 +22,7 @@ namespace CapaNegocio
         public Libro(int id, string nom, int isbn, string autor, string genero, int cant)
         {
             this.id = id;
+            this.nombre = nom;
             this.isbn = isbn;
             this.autor = autor;
             this.genero = genero;
@@ -34,12 +35,28 @@ namespace CapaNegocio
             return this.listadoEjemplares.Count;
         }
 
+        public int ID
+        {
+            get { return this.id; }
+        }
+
+        public string Nombre
+        {
+            get { return this.nombre; }
+        }
+        public string Autor
+        {
+            get { return this.autor; }
+        }
+
+
+
         public List<Ejemplar> ListadoEjemplares
         {
             get { return this.listadoEjemplares; }
             set { this.listadoEjemplares = value; }
         }
-        public int CantEjemplares
+        public int Ejemplares
         {
             get { return this.cantEjemplares; }
         }

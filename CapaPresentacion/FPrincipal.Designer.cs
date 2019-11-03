@@ -76,20 +76,20 @@
             this.darDeAltaUnLibroToolStripMenuItem,
             this.darDeBajaunLibroToolStripMenuItem});
             this.libroToolStripMenuItem.Name = "libroToolStripMenuItem";
-            this.libroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.libroToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.libroToolStripMenuItem.Text = "Libro";
             // 
             // darDeAltaUnLibroToolStripMenuItem
             // 
             this.darDeAltaUnLibroToolStripMenuItem.Name = "darDeAltaUnLibroToolStripMenuItem";
-            this.darDeAltaUnLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.darDeAltaUnLibroToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.darDeAltaUnLibroToolStripMenuItem.Text = "Agregar un libro";
             this.darDeAltaUnLibroToolStripMenuItem.Click += new System.EventHandler(this.DarDeAltaUnLibroToolStripMenuItem_Click);
             // 
             // darDeBajaunLibroToolStripMenuItem
             // 
             this.darDeBajaunLibroToolStripMenuItem.Name = "darDeBajaunLibroToolStripMenuItem";
-            this.darDeBajaunLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.darDeBajaunLibroToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.darDeBajaunLibroToolStripMenuItem.Text = "Dar de baja un libro";
             // 
             // clienteToolStripMenuItem
@@ -98,7 +98,7 @@
             this.darDeAltaUnClienteToolStripMenuItem,
             this.darDeBajaUnClienteToolStripMenuItem});
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // darDeAltaUnClienteToolStripMenuItem
@@ -129,6 +129,7 @@
             this.listadoDeLibrosToolStripMenuItem.Name = "listadoDeLibrosToolStripMenuItem";
             this.listadoDeLibrosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.listadoDeLibrosToolStripMenuItem.Text = "Listado de libros";
+            this.listadoDeLibrosToolStripMenuItem.Click += new System.EventHandler(this.ListadoDeLibrosToolStripMenuItem_Click);
             // 
             // listadoDeClientesToolStripMenuItem
             // 

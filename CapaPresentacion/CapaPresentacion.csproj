@@ -53,6 +53,12 @@
     <Compile Include="FAgregarLibro.Designer.cs">
       <DependentUpon>FAgregarLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Flistadolibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flistadolibros.Designer.cs">
+      <DependentUpon>Flistadolibros.cs</DependentUpon>
+    </Compile>
     <Compile Include="FPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     <Compile Include="random.cs" />
     <EmbeddedResource Include="FAgregarLibro.resx">
       <DependentUpon>FAgregarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flistadolibros.resx">
+      <DependentUpon>Flistadolibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FPrincipal.resx">
       <DependentUpon>FPrincipal.cs</DependentUpon>

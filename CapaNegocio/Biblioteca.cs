@@ -29,23 +29,33 @@ namespace CapaNegocio
         //Devuelve true si el libro existe, sino false
         public bool verificarlibro(Libro l)
         {
-            if (this.listadoLibros.Contains(l) == true)
+            int i = 0;
+            while (i < this.listadoLibros.Count && this.listadoLibros[i].ID != l.ID)
+                i++;
+            if(i < this.listadoLibros.Count)
                 return true;//lo encontro
             else
                 return false;//no lo encontro
         }
 
+        //Agrega un libro a la lista y sus ejemplares
         public void agrebarlibro(Libro l)
         {
             if (l != null)
                 listadoLibros.Add(l);
-            for(int i = 0; i < l.CantEjemplares; i++)
+            for(int i = 0; i < l.Ejemplares; i++)
             {
                 Ejemplar ejem = new Ejemplar((i + 1),true, l);
                 l.ListadoEjemplares.Add(ejem);
                 this.listadoEjemplares.Add(ejem);
             }
         }
+
+        public List<Libro> listaLibros
+        {
+            get { return this.listadoLibros; }
+        }
+
         public void registrarSocio()
         {
 
