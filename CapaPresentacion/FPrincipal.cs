@@ -15,6 +15,7 @@ namespace CapaPresentacion
     {
         private Biblioteca biblioteca;
         private Libro l;
+        private Socio s;
         
         public FPrincipal()
         {
@@ -51,13 +52,18 @@ namespace CapaPresentacion
             }
         }
 
+        //Listar todos los libros
         private void ListadoDeLibrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Flistadolibros listlibros = new Flistadolibros(biblioteca);
             listlibros.ShowDialog();
         }
 
+        //Agregar un socio
+        private void DarDeAltaUnClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarSocio as = new AgregarSocio();
 
-
+        }
     }
 }

@@ -9,14 +9,14 @@ namespace CapaNegocio
     public class Socio
     {
         private int id;
-        private int nombre;
-        private int apellido;
+        private string nombre;
+        private string apellido;
         private int dni;
         private string domicilio;
         private int tel;
 
         //Constructor
-        public Socio(int id, int nombre, int apellido, int dni, string domicilio, int tel)
+        public Socio(int id, string nombre, string apellido, int dni, string domicilio, int tel)
         {
             this.id = id;
             this.nombre = nombre;

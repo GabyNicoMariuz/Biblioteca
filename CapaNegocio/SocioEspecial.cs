@@ -8,7 +8,7 @@ namespace CapaNegocio
 {
     public class SocioEspecial:Socio
     {
-        SocioEspecial(int id, int nombre, int apellido, int dni, string domicilio, int tel) :
+        public SocioEspecial(int id, string nombre, string apellido, int dni, string domicilio, int tel) :
          base(id, nombre, apellido, dni, domicilio, tel)
         {
           
