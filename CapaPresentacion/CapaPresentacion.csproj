@@ -65,6 +65,12 @@
     <Compile Include="Flistadolibros.Designer.cs">
       <DependentUpon>Flistadolibros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Flistadosocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flistadosocios.Designer.cs">
+      <DependentUpon>Flistadosocios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Flistadolibros.resx">
       <DependentUpon>Flistadolibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flistadosocios.resx">
+      <DependentUpon>Flistadosocios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FPrincipal.resx">
       <DependentUpon>FPrincipal.cs</DependentUpon>

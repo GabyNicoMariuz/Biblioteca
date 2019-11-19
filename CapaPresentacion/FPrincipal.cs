@@ -15,7 +15,7 @@ namespace CapaPresentacion
     {
         private Biblioteca biblioteca;
         private Libro l;
-        private Socio s;
+        private Socio so;
         
         public FPrincipal()
         {
@@ -59,11 +59,33 @@ namespace CapaPresentacion
             listlibros.ShowDialog();
         }
 
+        //Listar todos los socios
+        private void ListadoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Flistadosocios listsocios = new Flistadosocios(biblioteca);
+            listsocios.ShowDialog();
+        }
+
+
         //Agregar un socio
         private void DarDeAltaUnClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AgregarSocio as = new AgregarSocio();
+            AgregarSocio agregarsocio = new AgregarSocio();
+            agregarsocio.ShowDialog();
+            so = agregarsocio.darSocio();
+            if (so != null)
+            {
+                biblioteca.registrarSocio(so);
+                MessageBox.Show("El socio fue registrado con éxito");
+            }
+            else
+                MessageBox.Show("El socio no pudo ser registrado");
+
 
         }
+
+
+
+       
     }
 }

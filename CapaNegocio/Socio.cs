@@ -27,6 +27,33 @@ namespace CapaNegocio
             //contraseña
         }
 
+        public int Identificacion
+        {
+            get { return this.id; }
+
+        }
+
+        public string Nombre
+        {
+            get { return this.nombre; }
+        }
+
+        public string Apellido
+        {
+            get { return this.apellido; }
+        }
+
+        public int DNI
+        {
+            get { return this.dni; }
+        }
+
+        public string Domicilio
+        {
+            get { return this.domicilio; }
+        }
+
 
     }
+
 }

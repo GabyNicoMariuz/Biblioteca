@@ -56,10 +56,19 @@ namespace CapaNegocio
             get { return this.listadoLibros; }
         }
 
-        public void registrarSocio()
-        {
 
+        public List<Socio> listaSocios
+        {
+            get { return this.listadoSocios; }
         }
+
+        public void registrarSocio(Socio s)
+        {
+            if (s != null && !listadoSocios.Contains(s))
+                this.listadoSocios.Add(s);
+        }
+
+
 
     }
 }
