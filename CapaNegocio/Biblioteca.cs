@@ -26,6 +26,13 @@ namespace CapaNegocio
         }
 
 
+
+        /*
+         * 
+         * LIBRO
+         * 
+         */
+
         //Devuelve true si el libro existe, sino false
         public bool verificarlibro(Libro l)
         {
@@ -38,23 +45,36 @@ namespace CapaNegocio
                 return false;//no lo encontro
         }
 
-        //Agrega un libro a la lista y sus ejemplares
+       
+        public List<Libro> listaLibros
+        {
+            get { return this.listadoLibros; }
+        }
+
+
+
+        //Registrar un libro a la lista y sus ejemplares
         public void agrebarlibro(Libro l)
         {
             if (l != null)
                 listadoLibros.Add(l);
-            for(int i = 0; i < l.Ejemplares; i++)
+            for (int i = 0; i < l.Ejemplares; i++)
             {
-                Ejemplar ejem = new Ejemplar((i + 1),true, l);
+                Ejemplar ejem = new Ejemplar((i + 1), true, l);
                 l.ListadoEjemplares.Add(ejem);
                 this.listadoEjemplares.Add(ejem);
             }
         }
 
-        public List<Libro> listaLibros
-        {
-            get { return this.listadoLibros; }
-        }
+
+
+        /*
+         * 
+         * 
+         * SOCIO
+         * 
+         * 
+         */
 
 
         public List<Socio> listaSocios
@@ -62,12 +82,52 @@ namespace CapaNegocio
             get { return this.listadoSocios; }
         }
 
+
+        //Registrar un socio
         public void registrarSocio(Socio s)
         {
             if (s != null && !listadoSocios.Contains(s))
                 this.listadoSocios.Add(s);
         }
 
+
+        /*
+         * 
+         * EJEMPLAR
+         * 
+         */
+
+        //Cantidad de ejemplares disponibles de un libro
+        public int verificarEjemplares(Libro l)
+        {
+            int cantEjemplares = 0;
+            for(int i = 0;i < this.listadoEjemplares.Count; i++)
+            {
+                if ((listadoEjemplares[i].Libro.ID == l.ID) && listadoEjemplares[i].Estado == true)
+                    cantEjemplares++;
+            }
+            return cantEjemplares;
+        }
+
+        //Obtener un ejemplar
+        public Ejemplar obtenerEjemplar(Libro l)
+        {
+            Ejemplar e = null;
+            for (int i = 0; i < this.listadoEjemplares.Count; i++)
+            {
+                if ((listadoEjemplares[i].Libro.ID == l.ID) && listadoEjemplares[i].Estado == true)
+                    e = listadoEjemplares[i];
+            }
+            return e;
+
+        }
+
+
+        /*
+         * 
+         * PRESTAMO
+         * 
+         */
 
 
     }

@@ -15,22 +15,35 @@ namespace CapaPresentacion
     {
         Biblioteca bi;
         List<Libro> libros;
+        Libro l;
         
         public Flistadolibros(Biblioteca biblio)
         {
             InitializeComponent();
             libros = biblio.listaLibros;
             bi = biblio;
-            dgview.DataSource = null;
-            dgview.DataSource = libros;
+            /*dgview.DataSource = null;
+            dgview.DataSource = libros;*/
+            listBox1.DataSource = null;
+            listBox1.DataSource = libros;
            
         }
 
+        //Seleccionar un libro
+        public Libro darLibro()
+        {
+            l = (Libro)listBox1.SelectedItem;
+            this.Close();
+            return l;
+        }
+
+
         private void Button1_Click(object sender, EventArgs e)
         {
+           
             this.Close();
         }
 
-      
+       
     }
 }

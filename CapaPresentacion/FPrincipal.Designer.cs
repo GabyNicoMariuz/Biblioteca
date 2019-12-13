@@ -166,6 +166,7 @@
             this.bPrestamoLibro.TabIndex = 1;
             this.bPrestamoLibro.Text = "Prestamo de libro";
             this.bPrestamoLibro.UseVisualStyleBackColor = true;
+            this.bPrestamoLibro.Click += new System.EventHandler(this.BPrestamoLibro_Click);
             // 
             // bDevolucionLibro
             // 

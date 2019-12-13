@@ -30,15 +30,25 @@ namespace CapaNegocio
             listadoEjemplares = new List<Ejemplar>();
         }
 
+        public override string ToString()
+        {
+            return ("ID: " + this.id + ", Nombre: " + this.nombre + ", ISBN: " + this.isbn + ", Autor: " + this.autor + ", Género: " + this.genero + ", Cant. total ejemplares: " + this.cantEjemplares);
+        }
+
+
         public int cantEjemplaresDisponibles()
         {
             return this.listadoEjemplares.Count;
         }
 
+
+        /*GET*/
         public int ID
         {
             get { return this.id; }
         }
+
+       
 
         public string Nombre
         {
@@ -47,6 +57,10 @@ namespace CapaNegocio
         public string Autor
         {
             get { return this.autor; }
+        }
+        public string Genero
+        {
+            get { return this.genero; }
         }
 
 

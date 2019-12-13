@@ -20,8 +20,10 @@ namespace CapaPresentacion
             InitializeComponent();
             Socios = biblio.listaSocios;
             bi = biblio;
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = Socios;
+            /*dataGridView1.DataSource = null;
+            dataGridView1.DataSource = Socios;*/
+            listBox1.DataSource = null;
+            listBox1.DataSource = Socios;
         }
 
       

@@ -16,6 +16,7 @@ namespace CapaPresentacion
         private Biblioteca biblioteca;
         private Libro l;
         private Socio so;
+        private Prestamo p;
         
         public FPrincipal()
         {
@@ -84,8 +85,18 @@ namespace CapaPresentacion
 
         }
 
+        //Registrar un prestamo
+        private void BPrestamoLibro_Click(object sender, EventArgs e)
+        {
+            FPrestamoLibro prestlibro = new FPrestamoLibro(biblioteca);
+            prestlibro.ShowDialog();
 
+            p = prestlibro.darPrestamo();
+            if(p != null)
+            {
 
-       
+            }
+
+        }
     }
 }

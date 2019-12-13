@@ -21,6 +21,26 @@ namespace CapaNegocio
             this.libro = libro;
         }
 
+        public Boolean Estado
+        {
+            get { return this.estado; }
+        }
+
+
+        public Libro Libro
+        {
+            get { return this.libro; }
+        }
+
+
+        public int nEjemplar
+        {
+            get { return this.numEjemplar; }
+        }
+
+        
+
+
 
     }
 }
