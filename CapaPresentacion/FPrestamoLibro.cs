@@ -24,7 +24,7 @@ namespace CapaPresentacion
             b = biblio;
             InitializeComponent();
 
-           
+
         }
 
 
@@ -47,7 +47,7 @@ namespace CapaPresentacion
             Flistadolibros flistlibro = new Flistadolibros(b);
             flistlibro.ShowDialog();
             l = flistlibro.darLibro(); //el libro elegido lo guardo en l
-            if(l != null)
+            if (l != null)
             {
                 tbAutor.Text = l.Autor;
                 tbGenero.Text = l.Genero;
@@ -59,15 +59,55 @@ namespace CapaPresentacion
                     tbEjemplares.Text = cantEjemplares.ToString();
                 }
                 //else if
-                    
+
 
             }
         }
 
 
+
         //Seleccionar socio
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Flistadosocios flistsocio = new Flistadosocios(b);
+            flistsocio.ShowDialog();
+            s = flistsocio.darSocio();
+            int cantPrestHechos = 0;
+            if (s != null)
+            {
+                tbApellido.Text = s.Apellido;
+                tbNombre.Text = s.Nombre;
+                tbDNI.Text = s.DNI.ToString();
+                cantPrestHechos = b.cantPrestamosRealizados(s);
 
+            }
 
+            if (b.cantPrestamosVencidos(s).Count > 0)
+                bAceptar.Visible = false;
 
+        }
+
+       
+          //Registrar prestamo
+        private void BAceptar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Random r = new random();
+                int id = r.Next();//genera un id aleatorio
+                prestamo = new Prestamo(ejemplar, DateTime.Now, s, id);
+                this.Close();
+            }
+          
+             catch (Exception ex)
+            {
+                MessageBox.Show("No se completaron los campos obligatorios para poder realizar el prestamo");
+            }
+        }
+
+       
+
+    
     }
+    
 }

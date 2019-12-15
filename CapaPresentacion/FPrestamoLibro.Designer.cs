@@ -41,14 +41,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbDNI = new System.Windows.Forms.TextBox();
+            this.tbApellido = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.gbSocio = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bAceptar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.gbLibro.SuspendLayout();
             this.gbSocio.SuspendLayout();
@@ -176,30 +176,31 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Seleccionar un Socio";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // textBox6
+            // tbDNI
             // 
-            this.textBox6.Location = new System.Drawing.Point(133, 148);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 26);
-            this.textBox6.TabIndex = 6;
+            this.tbDNI.Location = new System.Drawing.Point(133, 148);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.ReadOnly = true;
+            this.tbDNI.Size = new System.Drawing.Size(100, 26);
+            this.tbDNI.TabIndex = 6;
             // 
-            // textBox7
+            // tbApellido
             // 
-            this.textBox7.Location = new System.Drawing.Point(133, 104);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(100, 26);
-            this.textBox7.TabIndex = 5;
+            this.tbApellido.Location = new System.Drawing.Point(133, 104);
+            this.tbApellido.Name = "tbApellido";
+            this.tbApellido.ReadOnly = true;
+            this.tbApellido.Size = new System.Drawing.Size(100, 26);
+            this.tbApellido.TabIndex = 5;
             // 
-            // textBox8
+            // tbNombre
             // 
-            this.textBox8.Location = new System.Drawing.Point(133, 55);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 26);
-            this.textBox8.TabIndex = 4;
+            this.tbNombre.Location = new System.Drawing.Point(133, 55);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.ReadOnly = true;
+            this.tbNombre.Size = new System.Drawing.Size(100, 26);
+            this.tbNombre.TabIndex = 4;
             // 
             // label6
             // 
@@ -231,9 +232,9 @@
             // gbSocio
             // 
             this.gbSocio.Controls.Add(this.button2);
-            this.gbSocio.Controls.Add(this.textBox6);
-            this.gbSocio.Controls.Add(this.textBox7);
-            this.gbSocio.Controls.Add(this.textBox8);
+            this.gbSocio.Controls.Add(this.tbDNI);
+            this.gbSocio.Controls.Add(this.tbApellido);
+            this.gbSocio.Controls.Add(this.tbNombre);
             this.gbSocio.Controls.Add(this.label6);
             this.gbSocio.Controls.Add(this.label7);
             this.gbSocio.Controls.Add(this.label8);
@@ -245,20 +246,21 @@
             this.gbSocio.TabStop = false;
             this.gbSocio.Text = "Socio";
             // 
-            // button3
+            // bAceptar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(253, 533);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 39);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Aceptar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAceptar.Location = new System.Drawing.Point(257, 587);
+            this.bAceptar.Name = "bAceptar";
+            this.bAceptar.Size = new System.Drawing.Size(134, 39);
+            this.bAceptar.TabIndex = 4;
+            this.bAceptar.Text = "Aceptar";
+            this.bAceptar.UseVisualStyleBackColor = true;
+            this.bAceptar.Click += new System.EventHandler(this.BAceptar_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(521, 533);
+            this.button4.Location = new System.Drawing.Point(525, 587);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(134, 39);
             this.button4.TabIndex = 5;
@@ -270,15 +272,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 613);
+            this.ClientSize = new System.Drawing.Size(895, 662);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.bAceptar);
             this.Controls.Add(this.gbSocio);
             this.Controls.Add(this.gbLibro);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lTitulo);
             this.Name = "FPrestamoLibro";
             this.Text = "FPrestamoLibro";
+        
             this.gbLibro.ResumeLayout(false);
             this.gbLibro.PerformLayout();
             this.gbSocio.ResumeLayout(false);
@@ -303,14 +306,14 @@
         private System.Windows.Forms.TextBox tbTitulo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbDNI;
+        private System.Windows.Forms.TextBox tbApellido;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox gbSocio;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bAceptar;
         private System.Windows.Forms.Button button4;
     }
 }

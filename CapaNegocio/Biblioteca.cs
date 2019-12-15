@@ -103,7 +103,7 @@ namespace CapaNegocio
             int cantEjemplares = 0;
             for(int i = 0;i < this.listadoEjemplares.Count; i++)
             {
-                if ((listadoEjemplares[i].Libro.ID == l.ID) && listadoEjemplares[i].Estado == true)
+                if ((listadoEjemplares[i].Libro.ID == l.ID) && (listadoEjemplares[i].Estado == true))
                     cantEjemplares++;
             }
             return cantEjemplares;
@@ -128,6 +128,39 @@ namespace CapaNegocio
          * PRESTAMO
          * 
          */
+
+        //Agregar un prestamo a la lista
+        public void agregarPrestamo(Prestamo p)
+        {
+            listadoPrestamos.Add(p);
+        }
+
+        //Da la cantidad de prestamos hechos por un socio
+        public int cantPrestamosRealizados(Socio s)
+        {
+            int cantPrestamos = 0;
+            for(int i = 0;i < listadoPrestamos.Count; i++)
+            {
+                if (s == listadoPrestamos[i].Socio)
+                    cantPrestamos++;
+            }
+            return cantPrestamos;
+        }
+
+        //Devuelve una lista con los prestamos que estan vencidos
+        public List<Prestamo> cantPrestamosVencidos(Socio s)
+        {
+           
+            List<Prestamo> prestamosVencidos = new List<Prestamo>();
+            for(int i = 0; i < listadoPrestamos.Count; i++)
+            {
+                if (listadoPrestamos[i].Socio == s && listadoPrestamos[i].fechaDev < DateTime.Today)
+                    prestamosVencidos.Add(listadoPrestamos[i]);
+            }
+
+            return prestamosVencidos;
+        }
+
 
 
     }

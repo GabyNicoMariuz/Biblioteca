@@ -15,6 +15,7 @@ namespace CapaPresentacion
     {
         Biblioteca bi;
         List<Socio> Socios;
+        Socio s;
         public Flistadosocios(Biblioteca biblio)
         {
             InitializeComponent();
@@ -27,6 +28,13 @@ namespace CapaPresentacion
         }
 
       
+
+        public Socio darSocio()
+        {
+            s = (Socio)listBox1.SelectedItem;
+            this.Close();
+            return s;
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {

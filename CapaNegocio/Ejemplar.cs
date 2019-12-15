@@ -38,7 +38,17 @@ namespace CapaNegocio
             get { return this.numEjemplar; }
         }
 
-        
+        //El ejemplar se encuentra prestado
+        public void estadoPrestamo()
+        {
+            this.estado = false;
+        }
+
+        //El ejemplar esta disponible
+        public void estadoDisponible()
+        {
+            this.estado = true;
+        }
 
 
 

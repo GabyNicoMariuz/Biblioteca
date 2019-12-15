@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    public class Socio
+    public abstract class Socio
     {
         private int id;
         private string nombre;
@@ -52,6 +52,8 @@ namespace CapaNegocio
         {
             get { return this.domicilio; }
         }
+
+        public abstract int diasRetirar();
 
 
     }

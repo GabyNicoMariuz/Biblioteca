@@ -92,10 +92,20 @@ namespace CapaPresentacion
             prestlibro.ShowDialog();
 
             p = prestlibro.darPrestamo();
-            if(p != null)
+            if (p != null)
             {
-
+                p.ejemp.estadoPrestamo();
+                biblioteca.agregarPrestamo(p);
+                MessageBox.Show("El prestamo fue realizado con éxito");
             }
+            else
+                MessageBox.Show("No se puedo realizar el prestamo");
+
+        }
+
+        //Registrar devolucion de un libro
+        private void BDevolucionLibro_Click(object sender, EventArgs e)
+        {
 
         }
     }

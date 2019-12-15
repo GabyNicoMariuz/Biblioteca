@@ -176,6 +176,7 @@
             this.bDevolucionLibro.TabIndex = 2;
             this.bDevolucionLibro.Text = "Devolución de libro";
             this.bDevolucionLibro.UseVisualStyleBackColor = true;
+            this.bDevolucionLibro.Click += new System.EventHandler(this.BDevolucionLibro_Click);
             // 
             // bReservarLibro
             // 
