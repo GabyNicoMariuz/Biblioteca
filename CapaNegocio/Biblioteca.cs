@@ -46,6 +46,7 @@ namespace CapaNegocio
         }
 
        
+        
         public List<Libro> listaLibros
         {
             get { return this.listadoLibros; }
@@ -129,6 +130,11 @@ namespace CapaNegocio
          * 
          */
 
+        public List<Prestamo> listaPrestamo
+        {
+            get { return this.listadoPrestamos; }
+        }
+
         //Agregar un prestamo a la lista
         public void agregarPrestamo(Prestamo p)
         {
@@ -161,6 +167,18 @@ namespace CapaNegocio
             return prestamosVencidos;
         }
 
+        //Eliminar un prestamo de la lista
+        public void eliminarPrestamo(Prestamo p)
+        {
+            listadoPrestamos.Remove(p);
+        }
+
+
+        /*
+        * 
+        * RESERVA
+        * 
+        */
 
 
     }

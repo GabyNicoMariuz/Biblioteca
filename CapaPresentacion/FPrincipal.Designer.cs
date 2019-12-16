@@ -144,6 +144,7 @@
             this.listadoDePrestamosToolStripMenuItem.Name = "listadoDePrestamosToolStripMenuItem";
             this.listadoDePrestamosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.listadoDePrestamosToolStripMenuItem.Text = "Listado de prestamos";
+            this.listadoDePrestamosToolStripMenuItem.Click += new System.EventHandler(this.ListadoDePrestamosToolStripMenuItem_Click);
             // 
             // listadoDeReservasToolStripMenuItem
             // 
@@ -186,6 +187,7 @@
             this.bReservarLibro.TabIndex = 3;
             this.bReservarLibro.Text = "Reservar un libro";
             this.bReservarLibro.UseVisualStyleBackColor = true;
+            this.bReservarLibro.Click += new System.EventHandler(this.BReservarLibro_Click);
             // 
             // bRenovarPrestamo
             // 

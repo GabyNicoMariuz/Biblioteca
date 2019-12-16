@@ -99,12 +99,36 @@ namespace CapaPresentacion
                 MessageBox.Show("El prestamo fue realizado con éxito");
             }
             else
-                MessageBox.Show("No se puedo realizar el prestamo");
+                MessageBox.Show("No se pudo realizar el prestamo");
 
         }
 
         //Registrar devolucion de un libro
         private void BDevolucionLibro_Click(object sender, EventArgs e)
+        {
+            FDevolucionLibro registrarDevolucion = new FDevolucionLibro(biblioteca);
+            registrarDevolucion.ShowDialog();
+            p = registrarDevolucion.darPrestamo();
+            if (p != null)
+            {
+                p.ejemp.estadoDisponible();
+                biblioteca.eliminarPrestamo(p);
+                MessageBox.Show("La devolución fue registrada correctamente");
+            }
+            else
+                MessageBox.Show("No se ha registrado la devolución");
+
+        }
+
+        //Listado de los prestamos
+        private void ListadoDePrestamosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Flistadoprestamos listadoPrestamos = new Flistadoprestamos(biblioteca);
+            listadoPrestamos.ShowDialog();
+            
+        }
+
+        private void BReservarLibro_Click(object sender, EventArgs e)
         {
 
         }

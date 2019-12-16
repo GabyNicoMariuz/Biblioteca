@@ -59,11 +59,23 @@
     <Compile Include="FAgregarLibro.Designer.cs">
       <DependentUpon>FAgregarLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDevolucionLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDevolucionLibro.Designer.cs">
+      <DependentUpon>FDevolucionLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Flistadolibros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Flistadolibros.Designer.cs">
       <DependentUpon>Flistadolibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flistadoprestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flistadoprestamos.Designer.cs">
+      <DependentUpon>Flistadoprestamos.cs</DependentUpon>
     </Compile>
     <Compile Include="Flistadosocios.cs">
       <SubType>Form</SubType>
@@ -92,8 +104,14 @@
     <EmbeddedResource Include="FAgregarLibro.resx">
       <DependentUpon>FAgregarLibro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDevolucionLibro.resx">
+      <DependentUpon>FDevolucionLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Flistadolibros.resx">
       <DependentUpon>Flistadolibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flistadoprestamos.resx">
+      <DependentUpon>Flistadoprestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Flistadosocios.resx">
       <DependentUpon>Flistadosocios.cs</DependentUpon>

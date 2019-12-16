@@ -26,13 +26,30 @@ namespace CapaNegocio
             id = np;
         }
 
+        public override string ToString()
+        {
+            return ("Nombre: " + this.ejemplar.Libro.Nombre + ", Fecha prestamo: " + this.fechaPrestamo + ", Fecha devolución: " + this.fechaDevolucion + ", Socio: " + this.socio.Nombre);
+        }
+
+
         public DateTime fechaDev
         {
             get { return this.fechaDevolucion; }
         }
+
+        public DateTime fechaprestamo
+        {
+            get { return this.fechaPrestamo; }
+        }
+
         public Socio Socio
         {
             get { return this.socio; }
+        }
+
+        public int numero
+        {
+            get { return this.id; }
         }
 
         public Ejemplar ejemp

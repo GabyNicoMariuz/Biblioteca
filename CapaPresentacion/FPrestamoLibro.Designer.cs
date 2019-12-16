@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lTitulo = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gbLibro = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tbEjemplares = new System.Windows.Forms.TextBox();
@@ -58,18 +57,11 @@
             // 
             this.lTitulo.AutoSize = true;
             this.lTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lTitulo.Location = new System.Drawing.Point(288, 44);
+            this.lTitulo.Location = new System.Drawing.Point(377, 53);
             this.lTitulo.Name = "lTitulo";
-            this.lTitulo.Size = new System.Drawing.Size(275, 24);
+            this.lTitulo.Size = new System.Drawing.Size(157, 24);
             this.lTitulo.TabIndex = 0;
-            this.lTitulo.Text = "Seleccionar fecha del prestamo";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(313, 99);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(223, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.lTitulo.Text = "Prestamo de libro";
             // 
             // gbLibro
             // 
@@ -83,7 +75,7 @@
             this.gbLibro.Controls.Add(this.label2);
             this.gbLibro.Controls.Add(this.label1);
             this.gbLibro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbLibro.Location = new System.Drawing.Point(30, 156);
+            this.gbLibro.Location = new System.Drawing.Point(30, 125);
             this.gbLibro.Name = "gbLibro";
             this.gbLibro.Size = new System.Drawing.Size(390, 306);
             this.gbLibro.TabIndex = 2;
@@ -239,7 +231,7 @@
             this.gbSocio.Controls.Add(this.label7);
             this.gbSocio.Controls.Add(this.label8);
             this.gbSocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbSocio.Location = new System.Drawing.Point(470, 156);
+            this.gbSocio.Location = new System.Drawing.Point(470, 125);
             this.gbSocio.Name = "gbSocio";
             this.gbSocio.Size = new System.Drawing.Size(390, 306);
             this.gbSocio.TabIndex = 3;
@@ -277,11 +269,9 @@
             this.Controls.Add(this.bAceptar);
             this.Controls.Add(this.gbSocio);
             this.Controls.Add(this.gbLibro);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lTitulo);
             this.Name = "FPrestamoLibro";
             this.Text = "FPrestamoLibro";
-        
             this.gbLibro.ResumeLayout(false);
             this.gbLibro.PerformLayout();
             this.gbSocio.ResumeLayout(false);
@@ -294,7 +284,6 @@
         #endregion
 
         private System.Windows.Forms.Label lTitulo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox gbLibro;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

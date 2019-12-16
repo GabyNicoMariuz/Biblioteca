@@ -13,5 +13,10 @@ namespace CapaNegocio
         private int numReserva;
         private bool disponible;
 
+
+
+
+
+
     }
 }
