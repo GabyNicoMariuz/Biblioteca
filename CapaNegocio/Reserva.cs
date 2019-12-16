@@ -11,7 +11,7 @@ namespace CapaNegocio
         private Socio socio;
         private Ejemplar ejemplar;
         private int numReserva;
-        private bool disponible;
+        private DateTime fechaDisponibilidad;
 
 
 

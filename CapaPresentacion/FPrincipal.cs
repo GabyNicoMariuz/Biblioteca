@@ -17,6 +17,7 @@ namespace CapaPresentacion
         private Libro l;
         private Socio so;
         private Prestamo p;
+        private Reserva r;
         
         public FPrincipal()
         {

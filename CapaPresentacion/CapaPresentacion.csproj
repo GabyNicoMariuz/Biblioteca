@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FAgregarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgregarReserva.Designer.cs">
+      <DependentUpon>FAgregarReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="FAgregarSocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="random.cs" />
+    <EmbeddedResource Include="FAgregarReserva.resx">
+      <DependentUpon>FAgregarReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FAgregarSocio.resx">
       <DependentUpon>FAgregarSocio.cs</DependentUpon>
     </EmbeddedResource>
