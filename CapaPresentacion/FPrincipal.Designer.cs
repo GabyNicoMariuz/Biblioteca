@@ -76,21 +76,22 @@
             this.darDeAltaUnLibroToolStripMenuItem,
             this.darDeBajaunLibroToolStripMenuItem});
             this.libroToolStripMenuItem.Name = "libroToolStripMenuItem";
-            this.libroToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.libroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.libroToolStripMenuItem.Text = "Libro";
             // 
             // darDeAltaUnLibroToolStripMenuItem
             // 
             this.darDeAltaUnLibroToolStripMenuItem.Name = "darDeAltaUnLibroToolStripMenuItem";
-            this.darDeAltaUnLibroToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.darDeAltaUnLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeAltaUnLibroToolStripMenuItem.Text = "Agregar un libro";
             this.darDeAltaUnLibroToolStripMenuItem.Click += new System.EventHandler(this.DarDeAltaUnLibroToolStripMenuItem_Click);
             // 
             // darDeBajaunLibroToolStripMenuItem
             // 
             this.darDeBajaunLibroToolStripMenuItem.Name = "darDeBajaunLibroToolStripMenuItem";
-            this.darDeBajaunLibroToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.darDeBajaunLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeBajaunLibroToolStripMenuItem.Text = "Dar de baja un libro";
+            this.darDeBajaunLibroToolStripMenuItem.Click += new System.EventHandler(this.DarDeBajaunLibroToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
@@ -98,7 +99,7 @@
             this.darDeAltaUnClienteToolStripMenuItem,
             this.darDeBajaUnClienteToolStripMenuItem});
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Socio";
             // 
             // darDeAltaUnClienteToolStripMenuItem
@@ -113,6 +114,7 @@
             this.darDeBajaUnClienteToolStripMenuItem.Name = "darDeBajaUnClienteToolStripMenuItem";
             this.darDeBajaUnClienteToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.darDeBajaUnClienteToolStripMenuItem.Text = "Dar de baja un socio";
+            this.darDeBajaUnClienteToolStripMenuItem.Click += new System.EventHandler(this.DarDeBajaUnClienteToolStripMenuItem_Click);
             // 
             // listadoToolStripMenuItem
             // 
@@ -197,6 +199,7 @@
             this.bRenovarPrestamo.TabIndex = 4;
             this.bRenovarPrestamo.Text = "Renovar Prestamo";
             this.bRenovarPrestamo.UseVisualStyleBackColor = true;
+            this.bRenovarPrestamo.Click += new System.EventHandler(this.BRenovarPrestamo_Click);
             // 
             // FPrincipal
             // 

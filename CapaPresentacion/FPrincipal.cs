@@ -133,5 +133,20 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void BRenovarPrestamo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DarDeBajaunLibroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DarDeBajaUnClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
